@@ -1,0 +1,47 @@
+/* Tracking Section */
+.tracking {
+    padding: 5rem 0;
+    background: white;
+}
+
+.tracking h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2d5016;
+    margin-bottom: 2rem;
+}
+
+.tracking-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+}
+
+.tracking-form input {
+    flex: 1;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+.tracking-form button {
+    background-color: #ff6b35;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.tracking-results {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    max-width: 600px;
+    margin:  0 auto;
+}

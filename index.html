@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banana Crunch - Premium Banana Chips</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="hero-section.css" />
+    <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="tracking.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="checkout.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg" href="banana-svgrepo-com.svg" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <i class="fas fa-seedling"></i>
+            <span>Banana Crunch</span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tracking">Track Order</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" data-action="logout">Logout</a></li>
+          </ul>
+          <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Premium Banana Chips</h1>
+        <p>Crispy, Natural, and Irresistibly Delicious</p>
+        <button class="cta-button">Shop Now</button>
+      </div>
+      <div class="hero-image">
+        <div class="banana-chip-visual">🍌</div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+      <div class="container">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+          <div class="product-card" data-product="classic">
+            <div class="product-image">🍌</div>
+            <h3>Classic Banana Crunch</h3>
+            <p>
+              Our signature crispy banana chips with a perfect golden crunch
+            </p>
+            <div class="price" data-php="129.00">₱129.00</div>
+            <button
+              class="add-to-cart"
+              data-product="classic"
+              data-price="129.00"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="product-card" data-product="spicy">
+            <div class="product-image">🌶️🍌</div>
+            <h3>Spicy Banana Crunch</h3>
+            <p>A kick of spice with our premium banana chips</p>
+            <div class="price" data-php="149.00">₱149.00</div>
+            <button
+              class="add-to-cart"
+              data-product="spicy"
+              data-price="149.00"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="product-card" data-product="sweet">
+            <div class="product-image">🍯🍌</div>
+            <h3>Honey Glazed Crunch</h3>
+            <p>Sweet honey-glazed banana chips for the perfect treat</p>
+            <div class="price" data-php="159.00">₱159.00</div>
+            <button
+              class="add-to-cart"
+              data-product="sweet"
+              data-price="159.00"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Banana Crunch</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Since 2020, Banana Crunch has been crafting the finest banana
+              chips using only premium, naturally ripened bananas. Our unique
+              cooking process ensures every chip delivers the perfect crunch
+              while preserving the natural sweetness and nutrients.
+            </p>
+            <div class="features">
+              <div class="feature">
+                <i class="fas fa-leaf"></i>
+                <span>100% Natural</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-heart"></i>
+                <span>Heart Healthy</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-shipping-fast"></i>
+                <span>Fast Shipping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Tracking Section -->
+    <section id="tracking" class="tracking">
+      <div class="container">
+        <h2>Track Your Order</h2>
+        <div class="tracking-form">
+          <input
+            type="text"
+            id="trackingNumber"
+            placeholder="Enter your tracking number"
+          />
+          <button onclick="trackOrder()">Track Order</button>
+        </div>
+        <div id="trackingResults" class="tracking-results"></div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Get in Touch</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>hello@bananacrunch.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>1-800-BANANA-1</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Banana Street, Fruit Valley, CA 90210</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Banana Crunch</h3>
+            <p>Premium banana chips for every occasion</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#" data-action="logout">Logout</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Banana Crunch. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Cart Drawer -->
+    <div id="cartBackdrop" class="cart-drawer-backdrop"></div>
+    <aside id="cartDrawer" class="cart-drawer">
+      <div class="cart-header">
+        <h3 class="cart-title">Your Cart</h3>
+        <button id="cartClose" class="cart-close">×</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span><span id="cartTotal">₱0.00</span>
+        </div>
+        <div class="cart-actions">
+          <button class="checkout">Checkout</button>
+        </div>
+      </div>
+    </aside>
+
+    <div id="checkoutModal" class="checkout-modal">
+      <div class="checkout-modal-content">
+        <span id="checkoutClose" class="checkout-close">&times;</span>
+        <h3>Checkout</h3>
+        <form id="checkoutForm">
+          <div class="form-group">
+            <label for="paymentMethod">Payment Method</label>
+            <select id="paymentMethod" required>
+              <option value="">-- Select --</option>
+              <option value="GCASH">GCash</option>
+              <option value="COD">Cash on Delivery</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="deliveryAddress">Delivery Address</label>
+            <textarea id="deliveryAddress" required></textarea>
+          </div>
+
+          <button type="submit" class="confirm-checkout">
+            Confirm Checkout
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="cart.js"></script>
+    <script src="tracking.js"></script>
+  </body>
+</html>
